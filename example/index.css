@@ -1,0 +1,64 @@
+.playground {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  width: 100%;
+  max-width: 800px;
+  margin: 5px;
+}
+
+fieldset div {
+  margin: 10px 5px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator input {
+  border: 10px solid black;
+}
+
+.calculator table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.calculator td {
+  height: 20px;
+  width: 20px;
+}
+
+.calculator td span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator td:not(.operators-column):hover {
+  background-color: grey;
+}
+
+.calculator .operators-column span:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+}
+
+.calculator .operators {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
